@@ -39,6 +39,7 @@ function toggleHamMenu(event) {
           >About</RouterLink
         >
       </div>
+
       <div class="hidden items-center md:flex"></div>
       <!--Hamburger Icon-->
       <button
@@ -55,7 +56,7 @@ function toggleHamMenu(event) {
     <div class="md:hidden">
       <div
         id="menu"
-        class="mt 10 absolute left-6 right-6 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
+        class="z-100 absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
       >
         <RouterLink to="/" class="border-b-2 hover:text-emerald-700"
           >Home</RouterLink

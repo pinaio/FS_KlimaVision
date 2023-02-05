@@ -1,6 +1,6 @@
 <template>
   <div class="about bg-red-400">
-    <h1>This is an awesome about page</h1>
+    <h1 class="h-52">This is an awesome about page</h1>
   </div>
 </template>
 
