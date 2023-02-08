@@ -2,9 +2,12 @@
 function toggleHamMenu(event) {
   const btn = document.getElementById("menu-btn");
   const hamNav = document.getElementById("menu");
+  const backdrop = document.getElementById("hamMenuBackdrop");
   btn.classList.toggle("open");
   hamNav.classList.toggle("hidden");
   hamNav.classList.toggle("flex");
+  backdrop.classList.toggle("hidden");
+  backdrop.classList.toggle("flex");
 }
 </script>
 
@@ -55,16 +58,30 @@ function toggleHamMenu(event) {
     <!--Mobile menue-->
     <div class="md:hidden">
       <div
+        id="hamMenuBackdrop"
+        @click="toggleHamMenu"
+        class="fixed left-0 top-0 m-0 hidden h-screen w-screen bg-slate-100 bg-opacity-20"
+      ></div>
+      <div
         id="menu"
         class="z-100 absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
       >
-        <RouterLink to="/" class="border-b-2 hover:text-emerald-700"
+        <RouterLink
+          @click="toggleHamMenu"
+          to="/"
+          class="border-b-2 hover:text-emerald-700"
           >Home</RouterLink
         >
-        <RouterLink to="/co2-data" class="border-b-2 hover:text-emerald-700"
+        <RouterLink
+          @click="toggleHamMenu"
+          to="/co2-data"
+          class="border-b-2 hover:text-emerald-700"
           >CO2-Data</RouterLink
         >
-        <RouterLink to="/about" class="border-b-2 hover:text-emerald-700"
+        <RouterLink
+          @click="toggleHamMenu"
+          to="/about"
+          class="border-b-2 hover:text-emerald-700"
           >About</RouterLink
         >
       </div>
