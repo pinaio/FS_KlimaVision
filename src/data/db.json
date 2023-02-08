@@ -1,0 +1,1170 @@
+{
+  "data": [
+    {
+      "Land": "Afghanistan",
+      "co2Emmision": "8672.455",
+      "proKopf": "0.227972007",
+      "bevolkerung": "38041754"
+    },
+    {
+      "Land": "Ägypten",
+      "co2Emmision": "238560.352",
+      "proKopf": "2.376381425",
+      "bevolkerung": "100388073"
+    },
+    {
+      "Land": "Albanien",
+      "co2Emmision": "4536.079",
+      "proKopf": "1.589269604",
+      "bevolkerung": "2854191"
+    },
+    {
+      "Land": "Algerien",
+      "co2Emmision": "150005.969",
+      "proKopf": "3.484212038",
+      "bevolkerung": "43053054"
+    },
+    {
+      "Land": "Andorra",
+      "co2Emmision": "469.376",
+      "proKopf": "6.08457131",
+      "bevolkerung": "77142"
+    },
+    {
+      "Land": "Angola",
+      "co2Emmision": "34693.487",
+      "proKopf": "1.090123029",
+      "bevolkerung": "31825295"
+    },
+    {
+      "Land": "Antigua und Barbuda",
+      "co2Emmision": "557.384",
+      "proKopf": "5.739245042",
+      "bevolkerung": "97118"
+    },
+    {
+      "Land": "Äquatorialguinea",
+      "co2Emmision": "5654.514",
+      "proKopf": "4.170038629",
+      "bevolkerung": "1355986"
+    },
+    {
+      "Land": "Argentinien",
+      "co2Emmision": "201347.636",
+      "proKopf": "4.480494145",
+      "bevolkerung": "44938712"
+    },
+    {
+      "Land": "Armenien",
+      "co2Emmision": "5155.802",
+      "proKopf": "1.743161227",
+      "bevolkerung": "2957731"
+    },
+    {
+      "Land": "Aserbaidschan",
+      "co2Emmision": "37619.753",
+      "proKopf": "3.753223533",
+      "bevolkerung": "10023318"
+    },
+    {
+      "Land": "Äthiopien",
+      "co2Emmision": "14869.685",
+      "proKopf": "0.132671783",
+      "bevolkerung": "112078730"
+    },
+    {
+      "Land": "Australien",
+      "co2Emmision": "375907.837",
+      "proKopf": "14.58895485",
+      "bevolkerung": "25766605"
+    },
+    {
+      "Land": "Bahamas",
+      "co2Emmision": "1785.829",
+      "proKopf": "4.585138723",
+      "bevolkerung": "389482"
+    },
+    {
+      "Land": "Bahrain",
+      "co2Emmision": "31693.881",
+      "proKopf": "21.10624819",
+      "bevolkerung": "1501635"
+    },
+    {
+      "Land": "Bangladesch",
+      "co2Emmision": "84245.658",
+      "proKopf": "0.503527799",
+      "bevolkerung": "167310838"
+    },
+    {
+      "Land": "Barbados",
+      "co2Emmision": "1276.116",
+      "proKopf": "4.446009929",
+      "bevolkerung": "287025"
+    },
+    {
+      "Land": "Belgien",
+      "co2Emmision": "96889.474",
+      "proKopf": "8.436869555",
+      "bevolkerung": "11484055"
+    },
+    {
+      "Land": "Belize",
+      "co2Emmision": "568.385",
+      "proKopf": "1.456079497",
+      "bevolkerung": "390353"
+    },
+    {
+      "Land": "Benin",
+      "co2Emmision": "6475.922",
+      "proKopf": "0.548753422",
+      "bevolkerung": "11801151"
+    },
+    {
+      "Land": "Bhutan",
+      "co2Emmision": "1261.448",
+      "proKopf": "1.734795673",
+      "bevolkerung": "727145"
+    },
+    {
+      "Land": "Bolivien",
+      "co2Emmision": "21605.964",
+      "proKopf": "1.876641739",
+      "bevolkerung": "11513100"
+    },
+    {
+      "Land": "Bosnien und Herzegowina",
+      "co2Emmision": "21847.986",
+      "proKopf": "6.618596183",
+      "bevolkerung": "3301000"
+    },
+    {
+      "Land": "Botswana",
+      "co2Emmision": "6340.243",
+      "proKopf": "2.702369683",
+      "bevolkerung": "2346179"
+    },
+    {
+      "Land": "Brasilien",
+      "co2Emmision": "462298.69",
+      "proKopf": "2.17491512",
+      "bevolkerung": "212559417"
+    },
+    {
+      "Land": "Brunei",
+      "co2Emmision": "7664.03",
+      "proKopf": "17.68819599",
+      "bevolkerung": "433285"
+    },
+    {
+      "Land": "Bulgarien",
+      "co2Emmision": "41708.458",
+      "proKopf": "5.979054902",
+      "bevolkerung": "6975761"
+    },
+    {
+      "Land": "Burkina Faso",
+      "co2Emmision": "3417.644",
+      "proKopf": "0.168179737",
+      "bevolkerung": "20321378"
+    },
+    {
+      "Land": "Burundi",
+      "co2Emmision": "495.045",
+      "proKopf": "0.042933226",
+      "bevolkerung": "11530580"
+    },
+    {
+      "Land": "Chile",
+      "co2Emmision": "85822.468",
+      "proKopf": "4.528403119",
+      "bevolkerung": "18952038"
+    },
+    {
+      "Land": "Volksrepublik China",
+      "co2Emmision": "9893037.952",
+      "proKopf": "7.078008",
+      "bevolkerung": "1397715000"
+    },
+    {
+      "Land": "Cookinseln",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "17459"
+    },
+    {
+      "Land": "Costa Rica",
+      "co2Emmision": "8023.396",
+      "proKopf": "1.589558997",
+      "bevolkerung": "5047561"
+    },
+    {
+      "Land": "Elfenbeinküste",
+      "co2Emmision": "9673.546",
+      "proKopf": "0.37616042",
+      "bevolkerung": "25716544"
+    },
+    {
+      "Land": "Dänemark",
+      "co2Emmision": "31785.556",
+      "proKopf": "5.462793928",
+      "bevolkerung": "5818553"
+    },
+    {
+      "Land": "Deutschland",
+      "co2Emmision": "727972.84",
+      "proKopf": "8.75674642",
+      "bevolkerung": "83132799"
+    },
+    {
+      "Land": "Dominica",
+      "co2Emmision": "179.683",
+      "proKopf": "2.502269942",
+      "bevolkerung": "71808"
+    },
+    {
+      "Land": "Dominikanische Republik",
+      "co2Emmision": "25258.296",
+      "proKopf": "2.352024843",
+      "bevolkerung": "10738958"
+    },
+    {
+      "Land": "Dschibuti",
+      "co2Emmision": "619.723",
+      "proKopf": "0.636553474",
+      "bevolkerung": "973560"
+    },
+    {
+      "Land": "Ecuador",
+      "co2Emmision": "41154.741",
+      "proKopf": "2.368800602",
+      "bevolkerung": "17373662"
+    },
+    {
+      "Land": "El Salvador",
+      "co2Emmision": "7168.985",
+      "proKopf": "1.110858623",
+      "bevolkerung": "6453553"
+    },
+    {
+      "Land": "Eritrea",
+      "co2Emmision": "711.398",
+      "proKopf": "0.112329518",
+      "bevolkerung": "6333135"
+    },
+    {
+      "Land": "Estland",
+      "co2Emmision": "16589.508",
+      "proKopf": "12.45623145",
+      "bevolkerung": "1331824"
+    },
+    {
+      "Land": "Fidschi",
+      "co2Emmision": "2046.186",
+      "proKopf": "2.299206812",
+      "bevolkerung": "889953"
+    },
+    {
+      "Land": "Finnland",
+      "co2Emmision": "45870.503",
+      "proKopf": "8.309401059",
+      "bevolkerung": "5520314"
+    },
+    {
+      "Land": "Frankreich",
+      "co2Emmision": "303275.568",
+      "proKopf": "4.522458679",
+      "bevolkerung": "67059887"
+    },
+    {
+      "Land": "Gabun",
+      "co2Emmision": "5320.817",
+      "proKopf": "2.449078722",
+      "bevolkerung": "2172579"
+    },
+    {
+      "Land": "Gambia",
+      "co2Emmision": "531.715",
+      "proKopf": "0.226482788",
+      "bevolkerung": "2347706"
+    },
+    {
+      "Land": "Georgia",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "10519475"
+    },
+    {
+      "Land": "Ghana",
+      "co2Emmision": "16670.182",
+      "proKopf": "0.541369604",
+      "bevolkerung": "30792608"
+    },
+    {
+      "Land": "Grenada",
+      "co2Emmision": "267.691",
+      "proKopf": "2.390034196",
+      "bevolkerung": "112003"
+    },
+    {
+      "Land": "Griechenland",
+      "co2Emmision": "62434.342",
+      "proKopf": "5.826097984",
+      "bevolkerung": "10716322"
+    },
+    {
+      "Land": "Guatemala",
+      "co2Emmision": "16776.525",
+      "proKopf": "1.010388986",
+      "bevolkerung": "16604026"
+    },
+    {
+      "Land": "Guinea",
+      "co2Emmision": "2995.939",
+      "proKopf": "0.234584707",
+      "bevolkerung": "12771246"
+    },
+    {
+      "Land": "Guinea-Bissau",
+      "co2Emmision": "293.36",
+      "proKopf": "0.15271833",
+      "bevolkerung": "1920922"
+    },
+    {
+      "Land": "Guyana",
+      "co2Emmision": "2383.55",
+      "proKopf": "3.04503517",
+      "bevolkerung": "782766"
+    },
+    {
+      "Land": "Haiti",
+      "co2Emmision": "2977.604",
+      "proKopf": "0.264368609",
+      "bevolkerung": "11263077"
+    },
+    {
+      "Land": "Honduras",
+      "co2Emmision": "9812.892",
+      "proKopf": "1.006851447",
+      "bevolkerung": "9746117"
+    },
+    {
+      "Land": "Indien",
+      "co2Emmision": "2407671.526",
+      "proKopf": "1.762031794",
+      "bevolkerung": "1366417754"
+    },
+    {
+      "Land": "Indonesien",
+      "co2Emmision": "563324.54",
+      "proKopf": "2.084812634",
+      "bevolkerung": "270203917"
+    },
+    {
+      "Land": "Irak",
+      "co2Emmision": "190060.61",
+      "proKopf": "4.834944268",
+      "bevolkerung": "39309783"
+    },
+    {
+      "Land": "Iran",
+      "co2Emmision": "661710.15",
+      "proKopf": "7.980689632",
+      "bevolkerung": "82913906"
+    },
+    {
+      "Land": "Irland",
+      "co2Emmision": "37711.428",
+      "proKopf": "7.531637371",
+      "bevolkerung": "5007069"
+    },
+    {
+      "Land": "Island",
+      "co2Emmision": "2064.521",
+      "proKopf": "5.713940545",
+      "bevolkerung": "361313"
+    },
+    {
+      "Land": "Israel",
+      "co2Emmision": "65166.257",
+      "proKopf": "7.198066672",
+      "bevolkerung": "9053300"
+    },
+    {
+      "Land": "Italien",
+      "co2Emmision": "320411.459",
+      "proKopf": "5.313852343",
+      "bevolkerung": "60297396"
+    },
+    {
+      "Land": "Jamaika",
+      "co2Emmision": "8225.081",
+      "proKopf": "2.789790586",
+      "bevolkerung": "2948279"
+    },
+    {
+      "Land": "Japan",
+      "co2Emmision": "1135886.253",
+      "proKopf": "8.998789011",
+      "bevolkerung": "126226568"
+    },
+    {
+      "Land": "Jemen",
+      "co2Emmision": "10608.631",
+      "proKopf": "0.36378367",
+      "bevolkerung": "29161922"
+    },
+    {
+      "Land": "Jordanien",
+      "co2Emmision": "25107.949",
+      "proKopf": "2.485518666",
+      "bevolkerung": "10101694"
+    },
+    {
+      "Land": "Kambodscha",
+      "co2Emmision": "9919.235",
+      "proKopf": "0.60165649",
+      "bevolkerung": "16486542"
+    },
+    {
+      "Land": "Kamerun",
+      "co2Emmision": "8291.087",
+      "proKopf": "0.320411394",
+      "bevolkerung": "25876380"
+    },
+    {
+      "Land": "Kanada",
+      "co2Emmision": "544894.198",
+      "proKopf": "14.73006266",
+      "bevolkerung": "36991981"
+    },
+    {
+      "Land": "Kap Verde",
+      "co2Emmision": "542.716",
+      "proKopf": "1.122176549",
+      "bevolkerung": "483628"
+    },
+    {
+      "Land": "Kasachstan",
+      "co2Emmision": "247207.138",
+      "proKopf": "13.35249393",
+      "bevolkerung": "18513930"
+    },
+    {
+      "Land": "Katar",
+      "co2Emmision": "103259.053",
+      "proKopf": "36.46066742",
+      "bevolkerung": "2832067"
+    },
+    {
+      "Land": "Kenia",
+      "co2Emmision": "17909.628",
+      "proKopf": "0.340655784",
+      "bevolkerung": "52573973"
+    },
+    {
+      "Land": "Kirgisistan",
+      "co2Emmision": "9787.223",
+      "proKopf": "1.515777385",
+      "bevolkerung": "6456900"
+    },
+    {
+      "Land": "Kiribati",
+      "co2Emmision": "66.006",
+      "proKopf": "0.561246875",
+      "bevolkerung": "117606"
+    },
+    {
+      "Land": "Kolumbien",
+      "co2Emmision": "97813.558",
+      "proKopf": "1.943079863",
+      "bevolkerung": "50339443"
+    },
+    {
+      "Land": "Komoren",
+      "co2Emmision": "201.685",
+      "proKopf": "0.237029402",
+      "bevolkerung": "850886"
+    },
+    {
+      "Land": "Demokratische Republik Kongo",
+      "co2Emmision": "2020.517",
+      "proKopf": "0.023280376",
+      "bevolkerung": "86790567"
+    },
+
+    {
+      "Land": "Südkorea",
+      "co2Emmision": "620302.386",
+      "proKopf": "11.9960009",
+      "bevolkerung": "51709098"
+    },
+
+    {
+      "Land": "Kosovo",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "1824000"
+    },
+    {
+      "Land": "Kroatien",
+      "co2Emmision": "17487.923",
+      "proKopf": "4.299427904",
+      "bevolkerung": "4067500"
+    },
+    {
+      "Land": "Kuba",
+      "co2Emmision": "28283.571",
+      "proKopf": "2.49557625",
+      "bevolkerung": "11333483"
+    },
+    {
+      "Land": "Kuwait",
+      "co2Emmision": "98733.975",
+      "proKopf": "23.46851132",
+      "bevolkerung": "4207083"
+    },
+    {
+      "Land": "Laos",
+      "co2Emmision": "17762.948",
+      "proKopf": "2.47758693",
+      "bevolkerung": "7169455"
+    },
+    {
+      "Land": "Lesotho",
+      "co2Emmision": "2511.895",
+      "proKopf": "1.181919174",
+      "bevolkerung": "2125268"
+    },
+    {
+      "Land": "Lettland",
+      "co2Emmision": "7003.97",
+      "proKopf": "3.661653219",
+      "bevolkerung": "1912789"
+    },
+    {
+      "Land": "Libanon",
+      "co2Emmision": "24796.254",
+      "proKopf": "3.616874569",
+      "bevolkerung": "6855713"
+    },
+    {
+      "Land": "Liberia",
+      "co2Emmision": "1386.126",
+      "proKopf": "0.280741544",
+      "bevolkerung": "4937374"
+    },
+    {
+      "Land": "Libyen",
+      "co2Emmision": "50564.263",
+      "proKopf": "7.460659699",
+      "bevolkerung": "6777452"
+    },
+    {
+      "Land": "Liechtenstein",
+      "co2Emmision": "51.338",
+      "proKopf": "1.350324838",
+      "bevolkerung": "38019"
+    },
+    {
+      "Land": "Litauen",
+      "co2Emmision": "12962.845",
+      "proKopf": "4.651442635",
+      "bevolkerung": "2786844"
+    },
+    {
+      "Land": "Luxemburg",
+      "co2Emmision": "8987.817",
+      "proKopf": "13.92602848",
+      "bevolkerung": "645397"
+    },
+    {
+      "Land": "Madagaskar",
+      "co2Emmision": "3905.355",
+      "proKopf": "0.144807392",
+      "bevolkerung": "26969307"
+    },
+    {
+      "Land": "Malawi",
+      "co2Emmision": "1298.118",
+      "proKopf": "0.069683592",
+      "bevolkerung": "18628747"
+    },
+    {
+      "Land": "Malaysia",
+      "co2Emmision": "248288.903",
+      "proKopf": "7.652046629",
+      "bevolkerung": "32447385"
+    },
+    {
+      "Land": "Malediven",
+      "co2Emmision": "1444.798",
+      "proKopf": "2.721141043",
+      "bevolkerung": "530953"
+    },
+    {
+      "Land": "Mali",
+      "co2Emmision": "3179.289",
+      "proKopf": "0.161729779",
+      "bevolkerung": "19658031"
+    },
+    {
+      "Land": "Malta",
+      "co2Emmision": "1342.122",
+      "proKopf": "2.670076574",
+      "bevolkerung": "502653"
+    },
+    {
+      "Land": "Marokko",
+      "co2Emmision": "61275.57",
+      "proKopf": "1.660109465",
+      "bevolkerung": "36910560"
+    },
+    {
+      "Land": "Marshallinseln",
+      "co2Emmision": "143.013",
+      "proKopf": "2.432566209",
+      "bevolkerung": "58791"
+    },
+    {
+      "Land": "Mauretanien",
+      "co2Emmision": "2739.249",
+      "proKopf": "0.605265798",
+      "bevolkerung": "4525696"
+    },
+    {
+      "Land": "Mauritius",
+      "co2Emmision": "4349.062",
+      "proKopf": "3.436062419",
+      "bevolkerung": "1265711"
+    },
+    {
+      "Land": "Nordmazedonien",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "1836713"
+    },
+    {
+      "Land": "Mexiko",
+      "co2Emmision": "486405.548",
+      "proKopf": "3.859931876",
+      "bevolkerung": "126014024"
+    },
+    {
+      "Land": "Republik Moldau",
+      "co2Emmision": "5115.465",
+      "proKopf": "1.924817046",
+      "bevolkerung": "2657637"
+    },
+    {
+      "Land": "Monaco",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "38964"
+    },
+    {
+      "Land": "Mongolei",
+      "co2Emmision": "25368.306",
+      "proKopf": "7.865734084",
+      "bevolkerung": "3225167"
+    },
+    {
+      "Land": "Montenegro",
+      "co2Emmision": "2016.85",
+      "proKopf": "3.241810084",
+      "bevolkerung": "622137"
+    },
+    {
+      "Land": "Mosambik",
+      "co2Emmision": "7942.722",
+      "proKopf": "0.261565981",
+      "bevolkerung": "30366036"
+    },
+    {
+      "Land": "Myanmar",
+      "co2Emmision": "25280.298",
+      "proKopf": "0.467760228",
+      "bevolkerung": "54045420"
+    },
+    {
+      "Land": "Namibia",
+      "co2Emmision": "4228.051",
+      "proKopf": "1.694928904",
+      "bevolkerung": "2494530"
+    },
+    {
+      "Land": "Nauru",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "10084"
+    },
+    {
+      "Land": "Nepal",
+      "co2Emmision": "9105.161",
+      "proKopf": "0.318265346",
+      "bevolkerung": "28608710"
+    },
+    {
+      "Land": "Neuseeland",
+      "co2Emmision": "34381.792",
+      "proKopf": "6.992432784",
+      "bevolkerung": "4917000"
+    },
+    {
+      "Land": "Nicaragua",
+      "co2Emmision": "5592.175",
+      "proKopf": "0.854353875",
+      "bevolkerung": "6545502"
+    },
+    {
+      "Land": "Niederlande",
+      "co2Emmision": "170779.524",
+      "proKopf": "9.852939592",
+      "bevolkerung": "17332850"
+    },
+    {
+      "Land": "Niger",
+      "co2Emmision": "2016.85",
+      "proKopf": "0.086520298",
+      "bevolkerung": "23310715"
+    },
+    {
+      "Land": "Nigeria",
+      "co2Emmision": "120369.275",
+      "proKopf": "0.598960586",
+      "bevolkerung": "200963599"
+    },
+    {
+      "Land": "Niue",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "1784"
+    },
+    {
+      "Land": "Norwegen",
+      "co2Emmision": "41022.729",
+      "proKopf": "7.670816523",
+      "bevolkerung": "5347896"
+    },
+    {
+      "Land": "Oman",
+      "co2Emmision": "63457.435",
+      "proKopf": "12.04918129",
+      "bevolkerung": "5266535"
+    },
+    {
+      "Land": "Österreich",
+      "co2Emmision": "61447.919",
+      "proKopf": "6.922097017",
+      "bevolkerung": "8877067"
+    },
+    {
+      "Land": "Pakistan",
+      "co2Emmision": "201149.618",
+      "proKopf": "0.928817319",
+      "bevolkerung": "216565318"
+    },
+    {
+      "Land": "Palau",
+      "co2Emmision": "223.687",
+      "proKopf": "12.26824988",
+      "bevolkerung": "18233"
+    },
+    {
+      "Land": "Panama",
+      "co2Emmision": "10714.974",
+      "proKopf": "2.523284569",
+      "bevolkerung": "4246439"
+    },
+    {
+      "Land": "Papua-Neuguinea",
+      "co2Emmision": "7535.685",
+      "proKopf": "0.858659003",
+      "bevolkerung": "8776109"
+    },
+    {
+      "Land": "Paraguay",
+      "co2Emmision": "7407.34",
+      "proKopf": "1.051486549",
+      "bevolkerung": "7044636"
+    },
+    {
+      "Land": "Peru",
+      "co2Emmision": "57414.219",
+      "proKopf": "1.766023346",
+      "bevolkerung": "32510453"
+    },
+    {
+      "Land": "Philippinen",
+      "co2Emmision": "122287.116",
+      "proKopf": "1.131066821",
+      "bevolkerung": "108116615"
+    },
+    {
+      "Land": "Polen",
+      "co2Emmision": "299036.516",
+      "proKopf": "7.875418301",
+      "bevolkerung": "37970874"
+    },
+    {
+      "Land": "Portugal",
+      "co2Emmision": "48741.764",
+      "proKopf": "4.74630293",
+      "bevolkerung": "10269417"
+    },
+    {
+      "Land": "Ruanda",
+      "co2Emmision": "1114.768",
+      "proKopf": "0.088284819",
+      "bevolkerung": "12626950"
+    },
+    {
+      "Land": "Rumänien",
+      "co2Emmision": "69258.629",
+      "proKopf": "3.578047249",
+      "bevolkerung": "19356544"
+    },
+    {
+      "Land": "Russland",
+      "co2Emmision": "1732026.776",
+      "proKopf": "11.99684399",
+      "bevolkerung": "144373535"
+    },
+    {
+      "Land": "Salomonen",
+      "co2Emmision": "168.682",
+      "proKopf": "0.251830708",
+      "bevolkerung": "669823"
+    },
+    {
+      "Land": "Sambia",
+      "co2Emmision": "5141.134",
+      "proKopf": "0.287840847",
+      "bevolkerung": "17861030"
+    },
+    {
+      "Land": "Samoa",
+      "co2Emmision": "245.689",
+      "proKopf": "1.213243064",
+      "bevolkerung": "202506"
+    },
+    {
+      "Land": "San Marino",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "33860"
+    },
+    {
+      "Land": "São Tomé und Príncipe",
+      "co2Emmision": "121.011",
+      "proKopf": "0.562695298",
+      "bevolkerung": "215056"
+    },
+    {
+      "Land": "Saudi-Arabien",
+      "co2Emmision": "563449.218",
+      "proKopf": "16.44217744",
+      "bevolkerung": "34268528"
+    },
+    {
+      "Land": "Schweden",
+      "co2Emmision": "43252.265",
+      "proKopf": "4.205188143",
+      "bevolkerung": "10285453"
+    },
+    {
+      "Land": "Schweiz",
+      "co2Emmision": "34477.134",
+      "proKopf": "4.0207358",
+      "bevolkerung": "8574832"
+    },
+    {
+      "Land": "Senegal",
+      "co2Emmision": "10901.991",
+      "proKopf": "0.668983032",
+      "bevolkerung": "16296364"
+    },
+    {
+      "Land": "Serbien",
+      "co2Emmision": "45221.444",
+      "proKopf": "6.511390466",
+      "bevolkerung": "6944975"
+    },
+    {
+      "Land": "Seychellen",
+      "co2Emmision": "605.055",
+      "proKopf": "6.197746479",
+      "bevolkerung": "97625"
+    },
+    {
+      "Land": "Sierra Leone",
+      "co2Emmision": "1092.766",
+      "proKopf": "0.139861248",
+      "bevolkerung": "7813215"
+    },
+    {
+      "Land": "Simbabwe",
+      "co2Emmision": "10982.665",
+      "proKopf": "0.749901949",
+      "bevolkerung": "14645468"
+    },
+    {
+      "Land": "Singapur",
+      "co2Emmision": "37535.412",
+      "proKopf": "6.581039346",
+      "bevolkerung": "5703569"
+    },
+    {
+      "Land": "Slowakei",
+      "co2Emmision": "32423.614",
+      "proKopf": "5.944844156",
+      "bevolkerung": "5454073"
+    },
+    {
+      "Land": "Slowenien",
+      "co2Emmision": "12632.815",
+      "proKopf": "6.050355229",
+      "bevolkerung": "2087946"
+    },
+    {
+      "Land": "Somalia",
+      "co2Emmision": "645.392",
+      "proKopf": "0.041792137",
+      "bevolkerung": "15442905"
+    },
+    {
+      "Land": "Spanien",
+      "co2Emmision": "244002.18",
+      "proKopf": "5.183068486",
+      "bevolkerung": "47076781"
+    },
+    {
+      "Land": "Sri Lanka",
+      "co2Emmision": "23362.457",
+      "proKopf": "1.071524882",
+      "bevolkerung": "21803000"
+    },
+    {
+      "Land": "St. Kitts und Nevis",
+      "co2Emmision": "238.355",
+      "proKopf": "4.512333643",
+      "bevolkerung": "52823"
+    },
+    {
+      "Land": "St. Lucia",
+      "co2Emmision": "414.371",
+      "proKopf": "2.266923792",
+      "bevolkerung": "182790"
+    },
+    {
+      "Land": "St. Vincent und die Grenadinen",
+      "co2Emmision": "220.02",
+      "proKopf": "2.190234433",
+      "bevolkerung": "100455"
+    },
+    {
+      "Land": "Südafrika",
+      "co2Emmision": "476643.994",
+      "proKopf": "8.13965293",
+      "bevolkerung": "58558270"
+    },
+    {
+      "Land": "Sudan",
+      "co2Emmision": "19999.818",
+      "proKopf": "0.467140981",
+      "bevolkerung": "42813238"
+    },
+    {
+      "Land": "Südsudan",
+      "co2Emmision": "1727.157",
+      "proKopf": "0.156132648",
+      "bevolkerung": "11062113"
+    },
+    {
+      "Land": "Suriname",
+      "co2Emmision": "1738.158",
+      "proKopf": "2.989751828",
+      "bevolkerung": "581372"
+    },
+    {
+      "Land": "Eswatini",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "1093238"
+    },
+    {
+      "Land": "Syrien",
+      "co2Emmision": "28829.954",
+      "proKopf": "1.688911892",
+      "bevolkerung": "17070135"
+    },
+    {
+      "Land": "Tadschikistan",
+      "co2Emmision": "5309.816",
+      "proKopf": "0.569660524",
+      "bevolkerung": "9321018"
+    },
+    {
+      "Land": "Tansania",
+      "co2Emmision": "11972.755",
+      "proKopf": "0.206407369",
+      "bevolkerung": "58005463"
+    },
+    {
+      "Land": "Thailand",
+      "co2Emmision": "283763.461",
+      "proKopf": "4.075563218",
+      "bevolkerung": "69625582"
+    },
+    {
+      "Land": "Osttimor",
+      "co2Emmision": "495.045",
+      "proKopf": "0.141441429",
+      "bevolkerung": "3500000"
+    },
+    {
+      "Land": "Togo",
+      "co2Emmision": "2999.606",
+      "proKopf": "0.371129691",
+      "bevolkerung": "8082366"
+    },
+    {
+      "Land": "Tonga",
+      "co2Emmision": "128.345",
+      "proKopf": "1.280773184",
+      "bevolkerung": "100209"
+    },
+    {
+      "Land": "Trinidad und Tobago",
+      "co2Emmision": "43868.321",
+      "proKopf": "31.44743375",
+      "bevolkerung": "1394973"
+    },
+    {
+      "Land": "Tschad",
+      "co2Emmision": "1015.759",
+      "proKopf": "0.063696426",
+      "bevolkerung": "15946876"
+    },
+    {
+      "Land": "Tschechien",
+      "co2Emmision": "102217.625",
+      "proKopf": "9.5801699",
+      "bevolkerung": "10669709"
+    },
+    {
+      "Land": "Tunesien",
+      "co2Emmision": "29937.388",
+      "proKopf": "2.55990657",
+      "bevolkerung": "11694719"
+    },
+    {
+      "Land": "Türkei",
+      "co2Emmision": "372724.881",
+      "proKopf": "4.467536869",
+      "bevolkerung": "83429615"
+    },
+    {
+      "Land": "Turkmenistan",
+      "co2Emmision": "70630.087",
+      "proKopf": "11.88640678",
+      "bevolkerung": "5942089"
+    },
+    {
+      "Land": "Tuvalu",
+      "co2Emmision": "11.001",
+      "proKopf": "0.944616177",
+      "bevolkerung": "11646"
+    },
+    {
+      "Land": "Uganda",
+      "co2Emmision": "5680.183",
+      "proKopf": "0.128308902",
+      "bevolkerung": "44269594"
+    },
+    {
+      "Land": "Ukraine",
+      "co2Emmision": "202249.718",
+      "proKopf": "4.556697346",
+      "bevolkerung": "44385155"
+    },
+    {
+      "Land": "Ungarn",
+      "co2Emmision": "45536.806",
+      "proKopf": "4.66090519",
+      "bevolkerung": "9769949"
+    },
+    {
+      "Land": "Uruguay",
+      "co2Emmision": "6765.615",
+      "proKopf": "1.954400598",
+      "bevolkerung": "3461734"
+    },
+    {
+      "Land": "Usbekistan",
+      "co2Emmision": "91810.679",
+      "proKopf": "2.734035196",
+      "bevolkerung": "33580650"
+    },
+    {
+      "Land": "Vanuatu",
+      "co2Emmision": "146.68",
+      "proKopf": "0.489125723",
+      "bevolkerung": "299882"
+    },
+    {
+      "Land": "Vatikanstadt",
+      "co2Emmision": "-",
+      "proKopf": "-",
+      "bevolkerung": "836"
+    },
+    {
+      "Land": "Venezuela",
+      "co2Emmision": "164175.257",
+      "proKopf": "5.757337688",
+      "bevolkerung": "28515829"
+    },
+    {
+      "Land": "Vereinigte Arabische Emirate",
+      "co2Emmision": "206323.755",
+      "proKopf": "21.11694822",
+      "bevolkerung": "9770529"
+    },
+    {
+      "Land": "Vereinigte Staaten",
+      "co2Emmision": "5006302.077",
+      "proKopf": "15.25197828",
+      "bevolkerung": "328239523"
+    },
+    {
+      "Land": "Vereinigtes Königreich",
+      "co2Emmision": "379024.787",
+      "proKopf": "5.671102885",
+      "bevolkerung": "66834405"
+    },
+    {
+      "Land": "Vietnam",
+      "co2Emmision": "192667.847",
+      "proKopf": "1.997342324",
+      "bevolkerung": "96462106"
+    },
+    {
+      "Land": "Weißrussland",
+      "co2Emmision": "58279.631",
+      "proKopf": "6.156175926",
+      "bevolkerung": "9466856"
+    },
+    {
+      "Land": "Zentralafrikanische Republik",
+      "co2Emmision": "297.027",
+      "proKopf": "0.062595452",
+      "bevolkerung": "4745185"
+    },
+    {
+      "Land": "Republik Zypern",
+      "co2Emmision": "6626.269",
+      "proKopf": "5.528455875",
+      "bevolkerung": "1198575"
+    }
+  ]
+}
