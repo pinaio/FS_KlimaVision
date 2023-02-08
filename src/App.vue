@@ -12,4 +12,4 @@ import Footer from "./components/Footer.vue";
 </template>
 <script></script>
 
-<style src="..\src\assets\base.css" scoped></style>
+<style src="..\src\assets\base.css"></style>
