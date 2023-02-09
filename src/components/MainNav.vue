@@ -65,12 +65,12 @@ function openCloseMenu() {
         id="hamMenuBackdrop"
         @click="openCloseMenu"
         :class="{ hidden: !isMenuOpen, flex: isMenuOpen }"
-        class="fixed left-0 top-0 m-0 h-screen w-screen bg-slate-100 bg-opacity-20 backdrop-blur-sm"
+        class="fixed left-0 top-0 z-10 m-0 h-screen w-screen bg-slate-100 bg-opacity-20 backdrop-blur-sm"
       ></div>
       <div
         id="menu"
         :class="{ hidden: !isMenuOpen, flex: isMenuOpen }"
-        class="z-100 absolute left-6 right-6 mt-10 flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
+        class="absolute left-6 right-6 z-20 mt-10 flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
       >
         <RouterLink
           @click="openCloseMenu"
