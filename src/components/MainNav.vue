@@ -9,7 +9,7 @@ function openCloseMenu() {
 </script>
 
 <template>
-  <nav class="container relative mx-auto max-w-6xl p-2 font-semibold">
+  <nav class="container relative mx-auto max-w-6xl p-2 font-semibold shadow-sm">
     <div class="item-center flex justify-between">
       <div class="">
         <object
@@ -65,7 +65,7 @@ function openCloseMenu() {
         id="hamMenuBackdrop"
         @click="openCloseMenu"
         :class="{ hidden: !isMenuOpen, flex: isMenuOpen }"
-        class="fixed left-0 top-0 m-0 h-screen w-screen bg-slate-100 bg-opacity-20"
+        class="fixed left-0 top-0 m-0 h-screen w-screen bg-slate-100 bg-opacity-20 backdrop-blur-sm"
       ></div>
       <div
         id="menu"
