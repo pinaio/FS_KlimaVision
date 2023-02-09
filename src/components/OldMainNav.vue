@@ -1,10 +1,13 @@
 <script setup>
-import { ref } from "vue";
-
-const isMenuOpen = ref(false);
-
-function openCloseMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
+function toggleHamMenu(event) {
+  const btn = document.getElementById("menu-btn");
+  const hamNav = document.getElementById("menu");
+  const backdrop = document.getElementById("hamMenuBackdrop");
+  btn.classList.toggle("open");
+  hamNav.classList.toggle("hidden");
+  hamNav.classList.toggle("flex");
+  backdrop.classList.toggle("hidden");
+  backdrop.classList.toggle("flex");
 }
 </script>
 
@@ -44,48 +47,39 @@ function openCloseMenu() {
       <!--Hamburger Icon-->
       <button
         id="menu-btn"
-        @click="openCloseMenu"
-        :class="{ open: isMenuOpen }"
-        class="hamburger relative block h-6 w-6 cursor-pointer self-center transition-all duration-300 focus:outline-none md:hidden"
+        @click="toggleHamMenu"
+        class="hamburger block self-center focus:outline-none md:hidden"
       >
-        <span
-          class="hamburger-top absolute top-0 left-0 h-0.5 w-6 rotate-0 bg-slate-900 transition-all duration-500"
-        ></span>
-        <span
-          class="hamburger-middle absolute top-0 left-0 h-0.5 w-5 translate-y-[7px] rotate-0 bg-slate-900 transition-all duration-500"
-        ></span>
-        <span
-          class="hamburger-bottom absolute top-0 left-0 h-0.5 w-6 translate-y-[14px] rotate-0 bg-slate-900 transition-all duration-500"
-        ></span>
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
       </button>
     </div>
     <!--Mobile menue-->
     <div class="md:hidden">
       <div
         id="hamMenuBackdrop"
-        @click="openCloseMenu"
-        :class="{ hidden: !isMenuOpen, flex: isMenuOpen }"
-        class="fixed left-0 top-0 m-0 h-screen w-screen bg-slate-100 bg-opacity-20"
+        @click="toggleHamMenu"
+        class="fixed left-0 top-0 m-0 hidden h-screen w-screen bg-slate-100 bg-opacity-20"
       ></div>
       <div
         id="menu"
-        :class="{ hidden: !isMenuOpen, flex: isMenuOpen }"
-        class="z-100 absolute left-6 right-6 mt-10 flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
+        class="z-100 absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md transition-all duration-200 sm:w-auto sm:self-center"
       >
         <RouterLink
-          @click="openCloseMenu"
+          @click="toggleHamMenu"
           to="/"
           class="border-b-2 hover:text-emerald-700"
           >Home</RouterLink
         >
         <RouterLink
-          @click="openCloseMenu"
+          @click="toggleHamMenu"
           to="/co2-data"
           class="border-b-2 hover:text-emerald-700"
           >CO2-Data</RouterLink
         >
         <RouterLink
-          @click="openCloseMenu"
+          @click="toggleHamMenu"
           to="/about"
           class="border-b-2 hover:text-emerald-700"
           >About</RouterLink
@@ -102,7 +96,36 @@ function openCloseMenu() {
   @apply border-emerald-900 text-emerald-600;
 }
 
-/* Animation des Menu-Buttons*/
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+  width: 20px;
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);

@@ -1,16 +1,28 @@
 <script setup>
 import { ref } from "vue";
 
-const bgChanged = ref(false);
+const isClicked = ref(false);
 
-function toggleBg() {
-  bgChanged = !bgChanged;
+function changeBG() {
+  console.log("wurde geklickt");
+  isClicked.value = !isClicked.value;
 }
 </script>
 
 <template>
-  <div :class="{ 'bg-red-700': bgChanged }" class="h-32 bg-red-200">
-    Hallooooo
+  <div class="about bg-red-400">
+    <h1
+      :class="{ 'bg-emerald-600': isClicked }"
+      class="h-52 transition-colors duration-1000"
+    >
+      This is an awesome about page
+    </h1>
+    <button
+      @click="changeBG"
+      class="rounded-md border-emerald-900 bg-emerald-400 p-6"
+    >
+      Hi
+    </button>
   </div>
   <button
     type="button"
