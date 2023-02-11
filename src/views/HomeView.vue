@@ -53,8 +53,6 @@ import BlogPreview from "../components/BlogPreview.vue";
           </p>
         </div>
       </div>
-      <BlogPreview />
-
       <div class="my-10 self-center">
         <div
           class="flex max-w-6xl flex-col items-center justify-between space-x-2 bg-green-400 bg-gradient-to-br from-emerald-800 p-5 shadow-lg md:flex-row md:rounded-md md:p-10"
@@ -77,6 +75,7 @@ import BlogPreview from "../components/BlogPreview.vue";
             >To the Data</RouterLink
           >
         </div>
+        <BlogPreview />
       </div>
     </main>
   </div>
