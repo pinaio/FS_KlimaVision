@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="props.imageFile" :alt="props.imageAlt" />
+    <slot></slot>
     <div class="p-4">
       <h3>{{ blogHeadline }}</h3>
       <p>
@@ -18,7 +18,6 @@ const props = defineProps({
   blogText: String,
   blogPic: String,
   imageAlt: String,
-  imageFile: String,
 });
 </script>
 

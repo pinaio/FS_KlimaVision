@@ -55,33 +55,29 @@ import BlogPreview from "../components/BlogPreview.vue";
       </div>
       <div class="my-10 self-center">
         <div
-          class="flex max-w-6xl flex-col items-center justify-between space-x-2 bg-green-400 bg-gradient-to-br from-emerald-800 p-5 shadow-lg md:flex-row md:rounded-md md:p-10"
+          class="flex max-w-6xl flex-col items-center justify-between space-x-2 bg-green-800/95 p-5 md:flex-row md:rounded-md md:p-10"
         >
           <div class="mr-2 p-2">
-            <h2 class="text-xl font-bold text-amber-200">The CO2 Report</h2>
-            <p class="text-amber-50">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet,
+            <h2 class="text-sky-300">The CO2 Report</h2>
+            <p class="text-lg text-sky-50">
+              Sehen Sie sich die die Co2 Ausstöße von Ländern und unternehmen
+              an!
             </p>
           </div>
 
           <RouterLink
             to="/co2-data"
-            class="text-bold m-1 mt-4 min-w-max rounded-xl bg-emerald-900 px-4 py-2 text-emerald-50 transition-all duration-200 hover:bg-amber-200 hover:text-emerald-900"
+            class="text-bold m-1 mt-4 min-w-max rounded-md bg-sky-400 px-4 py-2 text-zinc-800 transition-all duration-200 hover:bg-amber-200 hover:text-emerald-900"
             >To the Data</RouterLink
           >
         </div>
-        <BlogPreview />
       </div>
+      <BlogPreview />
     </main>
   </div>
 </template>
 <style scoped>
 h2 {
-  @apply ml-5 text-xl font-bold text-green-700;
+  @apply ml-1 text-xl font-bold;
 }
 </style>
