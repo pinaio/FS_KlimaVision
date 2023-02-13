@@ -4,14 +4,57 @@ import climadata from "../data/db.json";
 
 const laender = ref(climadata.data);
 const search = ref("");
+const language = navigator.language;
+const sorting = ref("Alphabetisch Aufsteigend");
 
-console.log(climadata.data[0]);
+const rtlLanguages = [
+  "ar",
+  "dv",
+  "fa",
+  "ha",
+  "he",
+  "khw",
+  "ks",
+  "ku",
+  "ps",
+  "ur",
+  "yi",
+];
+const isrtl = ref(rtlLanguages.includes(language.split("-")[0]) ? true : false);
+
+// console.log(language, rtlLanguages, isrtl);
 
 const searchedLaender = computed(() => {
-  return laender.value.filter((land) =>
+  return sortedLaender.value.filter((land) =>
     land.Land.toLowerCase().includes(search.value.toLowerCase())
   );
 }); //
+
+const sortedLaender = computed(() => {
+  switch (sorting.value) {
+    case "Alphabetisch Aufsteigend":
+      return laender.value.sort((a, b) => (a.Land > b.Land ? 1 : -1));
+
+    case "Alphabetisch Absteigend":
+      return laender.value.sort((a, b) => (a.Land < b.Land ? 1 : -1));
+
+    case "Gesamt-Emmisionen Aufsteigend":
+      return laender.value.sort((a, b) => a.co2Emmision - b.co2Emmision);
+
+    case "Gesamt-Emmisionen Absteigend":
+      return laender.value.sort((a, b) => b.co2Emmision - a.co2Emmision);
+
+    case "pro Kopf Emmisionen Aufsteigend":
+      return laender.value.sort((a, b) => a.proKopf - b.proKopf);
+
+    case "pro Kopf-Emmisionen Absteigend":
+      return laender.value.sort((a, b) => b.proKopf - a.proKopf);
+
+    default:
+      return "Eins der anderen Dinger";
+  }
+});
+console.log(sortedLaender.value);
 
 // Only for Development to Simulate an REST-Endponint with JSON-Server
 //onMounted(() => {
@@ -26,8 +69,8 @@ function showIt() {
 }
 </script>
 <template>
-  <div class="bg-zinc-800">
-    <header class="flex flex-col justify-center space-y-4 text-green-200">
+  <!--
+<header class="flex flex-col justify-center space-y-4 text-green-200">
       <div
         class="flex flex-col items-center justify-center space-x-4 md:flex-row"
       >
@@ -89,35 +132,30 @@ function showIt() {
       </p>
     </header>
 
+
+
+
+
+
+
+
+
+
+  -->
+  <div class="bg-zinc-800">
     <!--Wrapper um die Tabelle-->
     <main
-      class="mx-auto grid max-w-6xl gap-6 self-center bg-slate-300 md:grid-cols-3"
+      class="flex flex-col justify-between bg-slate-300 md:max-w-full md:flex-row"
     >
-      <table class="col-span-2">
-        <thead class="text-amber-100">
-          <tr class="">
-            <th class="border-l-1 border-0 border-gray-700">Land</th>
-            <th class="border border-t-0 border-gray-700">Gesamt-Emmision</th>
-            <th class="border border-t-0 border-gray-700">Pro Kopf</th>
-            <th class="border border-t-0 border-r-0 border-gray-700">
-              Globaler anteil
-            </th>
-          </tr>
-        </thead>
-        <tbody v-for="land in searchedLaender" :key="land.Land">
-          <tr class="bg-amber-50 font-medium text-emerald-900">
-            <td class="border border-gray-700">{{ land.Land }}</td>
-            <td class="border border-gray-700">
-              {{ Math.round(land.co2Emmision) }}
-            </td>
-            <td class="border border-gray-700">
-              {{ Math.round(land.proKopf) }}
-            </td>
-            <td class="border border-gray-700">13%</td>
-          </tr>
-        </tbody>
-      </table>
-      <menu class="col-span-1 max-w-lg">
+      <menu
+        class="flex min-w-[20rem] flex-col bg-green-200 px-6"
+        :class="{ 'md:order-last': isrtl }"
+      >
+        <h3>Daten Auswählen</h3>
+        <ul>
+          <li>Länder</li>
+          <li>Unternehmen</li>
+        </ul>
         <div
           class="flex w-full justify-around rounded-md border border-sky-100 bg-zinc-700 p-4"
         >
@@ -127,20 +165,62 @@ function showIt() {
             placeholder="Suchen"
             class="p-2"
           />
-
-          <button
-            type="button"
-            @click="showIt"
-            class="rounded-lg bg-emerald-400 px-6 py-4"
-          >
-            Sortieren
-          </button>
         </div>
-        <ul>
-          <li>Länder</li>
-          <li>Unternehmen</li>
-        </ul>
+        <div class="flex flex-col">
+          <h3>Sortieren</h3>
+
+          <select
+            v-model="sorting"
+            class="m-4 outline-none focus:border focus:border-green-700"
+          >
+            <option>Alphabetisch Aufsteigend</option>
+            <option>Alphabetisch Absteigend</option>
+
+            <option>Gesamt-Emmisionen Aufsteigend</option>
+            <option>Gesamt-Emmisionen Absteigend</option>
+
+            <option>pro Kopf Emmisionen Aufsteigend</option>
+            <option>pro Kopf-Emmisionen Absteigend</option>
+
+            <option>globaler Anteil Aufsteigend</option>
+            <option>globaler Anteil Absteigend</option>
+          </select>
+        </div>
       </menu>
+      <div
+        class="flex grow justify-center md:max-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
+      >
+        <table class="text-md mx-10 md:border-separate md:border-spacing-1">
+          <thead class="bg-slate-600 text-amber-100">
+            <tr class="md:[&>*]:px-4">
+              <th class="border-gray-700">Land</th>
+              <th class="border border-t-0 border-gray-700">Gesamt-Emmision</th>
+              <th class="border border-t-0 border-gray-700">Pro Kopf</th>
+              <th class="border border-t-0 border-r-0 border-gray-700">
+                Globaler Anteil
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            v-for="land in searchedLaender"
+            :key="land.Land"
+            class="odd:bg-sky-200 even:bg-green-200"
+          >
+            <tr
+              class="text-center font-medium text-emerald-900 [&>*]:px-4 md:[&>*]:rounded-md"
+            >
+              <td class="border border-gray-700">{{ land.Land }}</td>
+              <td class="border border-gray-700">
+                {{ Math.round(land.co2Emmision) }}
+              </td>
+              <td class="border border-gray-700">
+                {{ Math.round(land.proKopf) }}
+              </td>
+              <td class="border border-gray-700">13%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </div>
 </template>

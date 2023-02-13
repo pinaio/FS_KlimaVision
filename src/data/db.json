@@ -186,12 +186,7 @@
       "proKopf": "7.078008",
       "bevolkerung": "1397715000"
     },
-    {
-      "Land": "Cookinseln",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "17459"
-    },
+
     {
       "Land": "Costa Rica",
       "co2Emmision": "8023.396",
@@ -287,12 +282,6 @@
       "co2Emmision": "531.715",
       "proKopf": "0.226482788",
       "bevolkerung": "2347706"
-    },
-    {
-      "Land": "Georgia",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "10519475"
     },
     {
       "Land": "Ghana",
@@ -501,12 +490,6 @@
     },
 
     {
-      "Land": "Kosovo",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "1824000"
-    },
-    {
       "Land": "Kroatien",
       "co2Emmision": "17487.923",
       "proKopf": "4.299427904",
@@ -638,12 +621,7 @@
       "proKopf": "3.436062419",
       "bevolkerung": "1265711"
     },
-    {
-      "Land": "Nordmazedonien",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "1836713"
-    },
+
     {
       "Land": "Mexiko",
       "co2Emmision": "486405.548",
@@ -656,12 +634,7 @@
       "proKopf": "1.924817046",
       "bevolkerung": "2657637"
     },
-    {
-      "Land": "Monaco",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "38964"
-    },
+
     {
       "Land": "Mongolei",
       "co2Emmision": "25368.306",
@@ -692,12 +665,7 @@
       "proKopf": "1.694928904",
       "bevolkerung": "2494530"
     },
-    {
-      "Land": "Nauru",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "10084"
-    },
+
     {
       "Land": "Nepal",
       "co2Emmision": "9105.161",
@@ -734,12 +702,7 @@
       "proKopf": "0.598960586",
       "bevolkerung": "200963599"
     },
-    {
-      "Land": "Niue",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "1784"
-    },
+
     {
       "Land": "Norwegen",
       "co2Emmision": "41022.729",
@@ -848,12 +811,7 @@
       "proKopf": "1.213243064",
       "bevolkerung": "202506"
     },
-    {
-      "Land": "San Marino",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "33860"
-    },
+
     {
       "Land": "São Tomé und Príncipe",
       "co2Emmision": "121.011",
@@ -986,12 +944,7 @@
       "proKopf": "2.989751828",
       "bevolkerung": "581372"
     },
-    {
-      "Land": "Eswatini",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "1093238"
-    },
+
     {
       "Land": "Syrien",
       "co2Emmision": "28829.954",
@@ -1112,12 +1065,7 @@
       "proKopf": "0.489125723",
       "bevolkerung": "299882"
     },
-    {
-      "Land": "Vatikanstadt",
-      "co2Emmision": "-",
-      "proKopf": "-",
-      "bevolkerung": "836"
-    },
+
     {
       "Land": "Venezuela",
       "co2Emmision": "164175.257",
