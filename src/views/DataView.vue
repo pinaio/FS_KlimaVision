@@ -26,35 +26,63 @@ const isrtl = ref(rtlLanguages.includes(language.split("-")[0]) ? true : false);
 
 const searchedLaender = computed(() => {
   return sortedLaender.value.filter((land) =>
-    land.Land.toLowerCase().includes(search.value.toLowerCase())
+    land.land.toLowerCase().includes(search.value.toLowerCase())
   );
 }); //
 
 const sortedLaender = computed(() => {
   switch (sorting.value) {
     case "Alphabetisch Aufsteigend":
-      return laender.value.sort((a, b) => (a.Land > b.Land ? 1 : -1));
+      return laender.value.sort((a, b) =>
+        deUmlaut(a.land) > deUmlaut(b.land) ? 1 : -1
+      );
 
     case "Alphabetisch Absteigend":
-      return laender.value.sort((a, b) => (a.Land < b.Land ? 1 : -1));
+      return laender.value.sort((a, b) =>
+        deUmlaut(a.land) < deUmlaut(b.land) ? 1 : -1
+      );
 
     case "Gesamt-Emmisionen Aufsteigend":
-      return laender.value.sort((a, b) => a.co2Emmision - b.co2Emmision);
+      return laender.value.sort((a, b) => a.co2Total - b.co2Total);
 
     case "Gesamt-Emmisionen Absteigend":
-      return laender.value.sort((a, b) => b.co2Emmision - a.co2Emmision);
+      return laender.value.sort((a, b) => b.co2Total - a.co2Total);
 
-    case "pro Kopf Emmisionen Aufsteigend":
+    case "pro-Kopf-Emmisionen Aufsteigend":
       return laender.value.sort((a, b) => a.proKopf - b.proKopf);
 
-    case "pro Kopf-Emmisionen Absteigend":
+    case "pro-Kopf-Emmisionen Absteigend":
       return laender.value.sort((a, b) => b.proKopf - a.proKopf);
+
+    case "globaler Anteil Aufsteigend":
+      return laender.value.sort(
+        (a, b) => parseFloat(a.anteil) - parseFloat(b.anteil)
+      );
+
+    case "globaler Anteil Absteigend":
+      return laender.value.sort(
+        (a, b) => parseFloat(b.anteil) - parseFloat(a.anteil)
+      );
+
+    case "Bevölkerung Aufsteigend":
+      return laender.value.sort((a, b) => a.bevolkerung - b.bevolkerung);
+
+    case "Bevölkerung Absteigend":
+      return laender.value.sort((a, b) => b.bevolkerung - a.bevolkerung);
 
     default:
       return "Eins der anderen Dinger";
   }
 });
-console.log(sortedLaender.value);
+
+function deUmlaut(value) {
+  value = value.toLowerCase();
+  value = value.replace(/ä/g, "ae");
+  value = value.replace(/ö/g, "oe");
+  value = value.replace(/ü/g, "ue");
+  value = value.replace(/ß/g, "ss");
+  return value;
+}
 
 // Only for Development to Simulate an REST-Endponint with JSON-Server
 //onMounted(() => {
@@ -142,11 +170,9 @@ function showIt() {
 
 
   -->
-  <div class="bg-zinc-800">
+  <div class="">
     <!--Wrapper um die Tabelle-->
-    <main
-      class="flex flex-col justify-between bg-slate-300 md:max-w-full md:flex-row"
-    >
+    <main class="flex flex-col justify-between md:max-w-full md:flex-row">
       <menu
         class="flex min-w-[20rem] flex-col bg-green-200 px-6"
         :class="{ 'md:order-last': isrtl }"
@@ -179,44 +205,65 @@ function showIt() {
             <option>Gesamt-Emmisionen Aufsteigend</option>
             <option>Gesamt-Emmisionen Absteigend</option>
 
-            <option>pro Kopf Emmisionen Aufsteigend</option>
-            <option>pro Kopf-Emmisionen Absteigend</option>
+            <option>pro-Kopf-Emmisionen Aufsteigend</option>
+            <option>pro-Kopf-Emmisionen Absteigend</option>
 
             <option>globaler Anteil Aufsteigend</option>
             <option>globaler Anteil Absteigend</option>
+
+            <option class="max-lg:hidden">Bevölkerung Aufsteigend</option>
+            <option class="max-lg:hidden">Bevölkerung Absteigend</option>
           </select>
         </div>
       </menu>
       <div
         class="flex grow justify-center md:max-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
       >
-        <table class="text-md mx-10 md:border-separate md:border-spacing-1">
-          <thead class="bg-slate-600 text-amber-100">
-            <tr class="md:[&>*]:px-4">
+        <table
+          class="text-md max-sm:mx-0 max-sm:text-sm md:mx-10 md:h-0 md:border-separate md:border-spacing-0.5 lg:border-spacing-y-1"
+        >
+          <thead class="max-h-10 bg-emerald-900 text-sky-100">
+            <tr class="[&>*]:px-2 md:[&>*]:rounded-md">
               <th class="border-gray-700">Land</th>
-              <th class="border border-t-0 border-gray-700">Gesamt-Emmision</th>
-              <th class="border border-t-0 border-gray-700">Pro Kopf</th>
+              <th class="border border-t-0 border-gray-700">
+                Gesamt-Emmision <br />
+                in kt
+              </th>
+              <th class="border border-t-0 border-gray-700">
+                Pro Kopf <br />in t
+              </th>
               <th class="border border-t-0 border-r-0 border-gray-700">
-                Globaler Anteil
+                Globaler Anteil <br />
+                in %
+              </th>
+              <th
+                class="border border-t-0 border-r-0 border-gray-700 max-lg:hidden"
+              >
+                Bevölkerung
               </th>
             </tr>
           </thead>
           <tbody
             v-for="land in searchedLaender"
-            :key="land.Land"
-            class="odd:bg-sky-200 even:bg-green-200"
+            :key="land.land"
+            class="odd:bg-sky-200/80 even:bg-green-200/80"
           >
             <tr
-              class="text-center font-medium text-emerald-900 [&>*]:px-4 md:[&>*]:rounded-md"
+              class="border-gray-700 text-center font-medium text-emerald-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
             >
-              <td class="border border-gray-700">{{ land.Land }}</td>
-              <td class="border border-gray-700">
-                {{ Math.round(land.co2Emmision) }}
+              <td>{{ land.land }}</td>
+              <td>
+                {{ parseInt(land.co2Total).toLocaleString() }}
               </td>
-              <td class="border border-gray-700">
-                {{ Math.round(land.proKopf) }}
+              <td>
+                {{ parseFloat(land.proKopf).toLocaleString() }}
               </td>
-              <td class="border border-gray-700">13%</td>
+              <td>
+                {{ parseFloat(land.anteil).toLocaleString() + "" }}
+              </td>
+              <td class="max-lg:hidden">
+                {{ parseInt(land.bevolkerung).toLocaleString() }}
+              </td>
             </tr>
           </tbody>
         </table>
