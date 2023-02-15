@@ -1,11 +1,14 @@
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, ref, vModelCheckbox } from "vue";
 import climadata from "../data/db.json";
 
-const laender = ref(climadata.data);
+const laender = ref(climadata.country);
+const business = ref(climadata.business);
 const search = ref("");
 const language = navigator.language;
 const sorting = ref("Alphabetisch Aufsteigend");
+const isBusiness = ref(false);
+console.log(business.value[1]);
 
 const rtlLanguages = [
   "ar",
@@ -174,14 +177,22 @@ function showIt() {
     <!--Wrapper um die Tabelle-->
     <main class="flex flex-col justify-between md:max-w-full md:flex-row">
       <menu
-        class="flex min-w-[20rem] flex-col bg-green-200 px-6"
+        class="bg-blur relative z-0 flex min-w-[20rem] flex-col overflow-hidden bg-green-200/30 p-4 lg:max-w-[20rem]"
         :class="{ 'md:order-last': isrtl }"
       >
-        <h3>Daten Auswählen</h3>
-        <ul>
-          <li>Länder</li>
-          <li>Unternehmen</li>
-        </ul>
+        <h3 class="text-center text-2xl font-bold">Daten Auswählen</h3>
+        <div
+          class="flex h-12 items-center justify-center space-x-2 bg-slate-300 text-lg"
+        >
+          <label class="text-center font-bold">Länder</label>
+          <input
+            v-model="isBusiness"
+            type="checkbox"
+            class="toggle bg-green-700"
+          />
+          <label class="text-center font-bold">Unternehmen</label>
+        </div>
+
         <div
           class="flex w-full justify-around rounded-md border border-sky-100 bg-zinc-700 p-4"
         >
@@ -193,13 +204,13 @@ function showIt() {
           />
         </div>
         <div class="flex flex-col">
-          <h3>Sortieren</h3>
+          <h3 class="text-center text-2xl font-bold">Sortieren</h3>
 
           <select
             v-model="sorting"
-            class="m-4 outline-none focus:border focus:border-green-700"
+            class="m-2outline-none select text-sm focus:border focus:border-green-700"
           >
-            <option>Alphabetisch Aufsteigend</option>
+            <option class="dropdown-content">Alphabetisch Aufsteigend</option>
             <option>Alphabetisch Absteigend</option>
 
             <option>Gesamt-Emmisionen Aufsteigend</option>
@@ -217,11 +228,13 @@ function showIt() {
         </div>
       </menu>
       <div
-        class="flex grow justify-center md:max-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
+        class="z-10 flex grow justify-center backdrop-blur-lg md:max-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
       >
         <table
+          v-if="!isBusiness"
           class="text-md max-sm:mx-0 max-sm:text-sm md:mx-10 md:h-0 md:border-separate md:border-spacing-0.5 lg:border-spacing-y-1"
         >
+          <!--Länder Tabelle-->
           <thead class="max-h-10 bg-emerald-900 text-sky-100">
             <tr class="[&>*]:px-2 md:[&>*]:rounded-md">
               <th class="border-gray-700">Land</th>
@@ -263,6 +276,41 @@ function showIt() {
               </td>
               <td class="max-lg:hidden">
                 {{ parseInt(land.bevolkerung).toLocaleString() }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table
+          v-if="isBusiness"
+          class="text-md max-sm:mx-0 max-sm:text-sm md:mx-10 md:h-0 md:border-separate md:border-spacing-0.5 lg:border-spacing-y-1"
+        >
+          <!--Länder Tabelle-->
+          <thead class="max-h-10 bg-emerald-900 text-sky-100">
+            <tr class="[&>*]:px-2 md:[&>*]:rounded-md">
+              <th class="border-gray-700">Unternehmen</th>
+              <th class="border border-t-0 border-gray-700">
+                Gesamt-Emmision <br />
+                in t
+              </th>
+              <th class="border border-t-0 border-r-0 border-gray-700">
+                Sektor
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            v-for="land in searchedLaender"
+            :key="land.land"
+            class="odd:bg-sky-200/80 even:bg-green-200/80"
+          >
+            <tr
+              class="border-gray-700 text-center font-medium text-emerald-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
+            >
+              <td>{{ land.land }}</td>
+              <td>
+                {{ parseInt(land.co2Total).toLocaleString() }}
+              </td>
+              <td>
+                {{ parseFloat(land.proKopf).toLocaleString() }}
               </td>
             </tr>
           </tbody>

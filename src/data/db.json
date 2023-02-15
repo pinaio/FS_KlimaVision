@@ -1,5 +1,5 @@
 {
-  "data": [
+  "country": [
     {
       "land": "Afghanistan",
       "co2Total": "8672",
@@ -1287,6 +1287,93 @@
       "proKopf": "5.53",
       "bevolkerung": "1198575",
       "anteil": "0.02%"
+    }
+  ],
+  "business": [
+    {
+      "unternehmen": "Micron A ",
+      "co2Total": "14870",
+      "sektor": "IT"
+    },
+    {
+      "unternehmen": "Outback A",
+      "co2Total": "375908",
+      "sektor": "Müllentsorgung"
+    },
+    {
+      "unternehmen": "A Destiny",
+      "co2Total": "1786",
+      "sektor": "Finanzen"
+    },
+    {
+      "unternehmen": "Balance ",
+      "co2Total": "31694",
+      "sektor": "Lebensmittel"
+    },
+    {
+      "unternehmen": "Genie GmbH",
+      "co2Total": "84246",
+      "sektor": "IT"
+    },
+    {
+      "unternehmen": "Webs AG",
+      "co2Total": "1276",
+      "sektor": "Müllentsorgung"
+    },
+    {
+      "unternehmen": "Wagner GmbH",
+      "co2Total": "564",
+      "sektor": "Finanzen"
+    },
+    {
+      "unternehmen": "Priblob Media",
+      "co2Total": "0.4",
+      "sektor": "Medien"
+    },
+    {
+      "unternehmen": "Tomorrow",
+      "co2Total": "4621",
+      "sektor": "IT"
+    },
+    {
+      "unternehmen": "Yesterday",
+      "co2Total": "212354",
+      "sektor": "Müllentsorgung"
+    },
+    {
+      "unternehmen": "Aragon S.E.",
+      "co2Total": "1223",
+      "sektor": "Finanzen"
+    },
+    {
+      "unternehmen": "Microduft",
+      "co2Total": "12321",
+      "sektor": "Lebensmittel"
+    },
+    {
+      "unternehmen": "Duschen und Tragen",
+      "co2Total": "1568",
+      "sektor": "IT"
+    },
+    {
+      "unternehmen": "Poust AG",
+      "co2Total": "4987",
+      "sektor": "Müllentsorgung"
+    },
+    {
+      "unternehmen": "Cybersport",
+      "co2Total": "687",
+      "sektor": "Finanzen"
+    },
+    {
+      "unternehmen": "Notibooks ",
+      "co2Total": "1357",
+      "sektor": "Beauty"
+    },
+    {
+      "unternehmen": "Bla GmbH",
+      "co2Total": "63",
+      "sektor": "Medien"
     }
   ]
 }
