@@ -22,7 +22,7 @@ import BlogPreview from "../components/BlogPreview.vue";
           viewBox="2 2 20 20"
           stroke-width="0.6"
           stroke="currentColor"
-          class="h-64 w-64 stroke-sky-300 opacity-40"
+          class="h-64 w-64 stroke-sky-600 opacity-40"
         >
           <path
             stroke-linecap="round"

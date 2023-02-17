@@ -38,6 +38,11 @@ function openCloseMenu() {
           class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
           >About</RouterLink
         >
+        <RouterLink
+          to="/blog"
+          class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
+          >Blog</RouterLink
+        >
       </div>
 
       <div class="hidden items-center md:flex"></div>
@@ -89,6 +94,12 @@ function openCloseMenu() {
           to="/about"
           class="border-b-2 hover:text-emerald-700"
           >About</RouterLink
+        >
+        <RouterLink
+          @click="openCloseMenu"
+          to="/blog"
+          class="border-b-2 hover:text-emerald-700"
+          >Blog</RouterLink
         >
       </div>
     </div>

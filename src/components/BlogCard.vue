@@ -16,8 +16,6 @@
 const props = defineProps({
   blogHeadline: String,
   blogText: String,
-  blogPic: String,
-  imageAlt: String,
 });
 </script>
 
@@ -29,10 +27,10 @@ const props = defineProps({
   @apply flex flex-col overflow-hidden rounded-md bg-green-50 shadow-md shadow-zinc-700;
 }
 .card h3 {
-  @apply ml-6 text-xl  font-semibold text-green-600;
+  @apply h-16 text-xl  font-semibold text-green-600;
 }
 .card p {
-  @apply text-sm text-emerald-800 line-clamp-5;
+  @apply text-sm leading-6 text-emerald-800 line-clamp-5;
 }
 
 .card button {
