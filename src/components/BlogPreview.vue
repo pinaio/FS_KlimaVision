@@ -7,6 +7,8 @@ import img3Url from "../assets/images/pollution.jpg";
 import { ref } from "vue";
 
 const blogdata = ref(blogs.data);
+
+console.log(blogdata);
 </script>
 
 <template>
@@ -23,21 +25,21 @@ const blogdata = ref(blogs.data);
         <BlogCard
           :blog-headline="blogdata[0].titel"
           :blog-text="blogdata[0].text"
-          image-alt="Hallooooo"
-          ><img :src="img3Url" alt="Halloooo"
-        /></BlogCard>
+          :blog-pic="blogdata[0].picUrl"
+          :blog-id="blogdata[0].id"
+        ></BlogCard>
         <BlogCard
           :blog-headline="blogdata[1].titel"
           :blog-text="blogdata[1].text"
-          image-alt="Hallooooo"
-          ><img :src="img1Url" alt="Halloooo"
-        /></BlogCard>
+          :blog-pic="blogdata[1].picUrl"
+          :blog-id="blogdata[1].id"
+        ></BlogCard>
         <BlogCard
           :blog-headline="blogdata[2].titel"
           :blog-text="blogdata[2].text"
-          image-alt="Hallooooo"
-          ><img :src="img2Url" alt="Halloooo"
-        /></BlogCard>
+          :blog-pic="blogdata[2].picUrl"
+          :blog-id="blogdata[2].id"
+        ></BlogCard>
       </div>
     </div>
   </div>

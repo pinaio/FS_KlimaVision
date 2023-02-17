@@ -1,13 +1,17 @@
 <template>
   <div class="card">
-    <slot></slot>
+    <img :src="blogPic" height="400" width="400" class="resize-y" />
     <div class="p-4">
       <h3>{{ blogHeadline }}</h3>
       <p>
         {{ blogText }}
       </p>
     </div>
-    <button>Mehr lesen</button>
+    <button>
+      <RouterLink :to="{ name: 'Blogpage', params: { id: blogId } }"
+        >TEST</RouterLink
+      >
+    </button>
   </div>
 </template>
 
@@ -16,6 +20,8 @@
 const props = defineProps({
   blogHeadline: String,
   blogText: String,
+  blogPic: String,
+  blogId: Number,
 });
 </script>
 

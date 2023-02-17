@@ -14,6 +14,8 @@ const blogdata = ref(blogs.data);
         <BlogCard
           :blog-headline="blog.titel"
           :blog-text="blog.text"
+          :blog-pic="blog.picUrl"
+          :blog-id="blog.id"
           class=""
         ></BlogCard>
       </div>
