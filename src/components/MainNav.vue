@@ -9,12 +9,12 @@ function openCloseMenu() {
 </script>
 
 <template>
-  <nav class="container relative mx-auto max-w-6xl p-2 font-semibold shadow-sm">
+  <nav class="relative mx-auto p-2 font-semibold md:shadow-sm">
     <div class="item-center flex justify-between">
       <div class="">
         <object
           data="src\assets\Logo.svg"
-          class="mx-auto h-20 self-center"
+          class="ml-4 h-20 self-center lg:ml-10"
         ></object>
       </div>
       <!--Menu - items-->
@@ -23,24 +23,24 @@ function openCloseMenu() {
       >
         <RouterLink
           to="/"
-          class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
+          class="rounded-lg border-green-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-green-50 hover:text-emerald-900 active:bg-green-100"
           >Home</RouterLink
         >
 
         <RouterLink
           to="/co2-data"
-          class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
+          class="rounded-lg border-green-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-green-50 hover:text-emerald-900 active:bg-green-100"
           >CO2-Data</RouterLink
         >
 
         <RouterLink
           to="/about"
-          class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
+          class="rounded-lg border-green-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-green-50 hover:text-emerald-900 active:bg-green-100"
           >About</RouterLink
         >
         <RouterLink
           to="/blog"
-          class="rounded-lg border-emerald-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-emerald-50 hover:text-emerald-900 active:bg-emerald-100"
+          class="rounded-lg border-green-700 border-opacity-50 py-2 px-2 transition-all duration-100 hover:border-b-4 hover:bg-green-50 hover:text-emerald-900 active:bg-green-100"
           >Blog</RouterLink
         >
       </div>

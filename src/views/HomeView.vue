@@ -5,13 +5,13 @@ import BlogPreview from "../components/BlogPreview.vue";
 <template>
   <div class="relative">
     <div
-      class="fixed inset-0 -z-10 mx-auto mt-[32rem] h-[20rem] w-[20rem] animate-spin-slow rounded-full bg-gradient-to-t from-green-600 to-sky-500 opacity-30 ring-4 ring-sky-800 blur-md md:mt-96 md:h-96 md:w-96 lg:h-[40rem] lg:w-[40rem]"
+      class="fixed inset-0 -z-10 mx-auto mt-[32rem] h-[20rem] w-[20rem] animate-spin-slow rounded-full bg-gradient-to-t from-green-600 to-sky-600 opacity-30 ring-4 ring-sky-800 blur-md md:mt-96 md:h-96 md:w-96 lg:h-[40rem] lg:w-[40rem]"
     ></div>
     <header
       class="relative mx-auto my-4 flex max-w-6xl items-center justify-start overflow-hidden text-6xl font-bold"
     >
       <h1
-        class="ml-4 max-w-sm bg-gradient-to-br from-green-600 to-sky-300 bg-clip-text p-8 text-transparent md:mx-auto"
+        class="ml-4 max-w-sm bg-gradient-to-br from-green-600 to-sky-500 bg-clip-text p-8 text-transparent md:mx-auto"
       >
         <span class="text-zinc-700">Co2</span> geht uns alle etwas an!
       </h1>
@@ -22,7 +22,7 @@ import BlogPreview from "../components/BlogPreview.vue";
           viewBox="2 2 20 20"
           stroke-width="0.6"
           stroke="currentColor"
-          class="h-64 w-64 stroke-sky-600 opacity-40"
+          class="h-64 w-64 stroke-sky-400 opacity-40"
         >
           <path
             stroke-linecap="round"
@@ -34,12 +34,14 @@ import BlogPreview from "../components/BlogPreview.vue";
     </header>
 
     <main class="mx-auto flex flex-col">
-      <div
-        class="relative flex max-w-6xl justify-center self-center overflow-hidden py-10"
-      >
-        <div class="z-0">
-          <h2 class="">Wir sind KlimaVision</h2>
-          <p class="my-4 px-6">
+      <div class="my-4 max-w-full self-center">
+        <div
+          class="z-0 max-w-5xl bg-sky-200/20 p-4 shadow-md backdrop-blur-md md:rounded-2xl md:p-10"
+        >
+          <h2 class="font-serif text-3xl font-extrabold text-green-600">
+            Wir sind KlimaVision
+          </h2>
+          <p class="my-4 px-2 text-lg font-medium text-zinc-800">
             KlimaVision ist eine Non-Profit-Organisation, die sich dem
             Klimaschutz und der Reduzierung von CO2-Emissionen verschrieben hat.
             Wir betreiben eine Informationsplattform, auf der die CO2-Emissionen
@@ -53,31 +55,28 @@ import BlogPreview from "../components/BlogPreview.vue";
           </p>
         </div>
       </div>
-      <div class="my-10 self-center">
-        <div
-          class="flex max-w-6xl flex-col items-center justify-between space-x-2 bg-green-800/95 p-5 md:flex-row md:rounded-md md:p-10"
-        >
-          <div class="mr-2 p-2">
-            <h2 class="text-sky-300">The CO2 Report</h2>
-            <p class="text-lg text-sky-50">
-              Sehen Sie sich die die Co2 Ausstöße von Ländern und unternehmen
-              an!
-            </p>
-          </div>
-
+      <div
+        class="flex items-center justify-center bg-green-600/60 p-5 backdrop-blur-lg md:flex-row md:rounded-md md:p-10"
+      >
+        <div class="flex flex-col justify-center p-10">
+          <h2 class="font-serif text-8xl font-bold text-zinc-800">
+            The Co2 Report
+          </h2>
+          <p class="py-10 font-mono text-lg font-bold text-zinc-900">
+            Sehen Sie sich die die Co2 Ausstöße von Ländern und unternehmen an!
+          </p>
           <RouterLink
             to="/co2-data"
-            class="text-bold m-1 mt-4 min-w-max rounded-md bg-sky-400 px-4 py-2 text-zinc-800 transition-all duration-200 hover:bg-amber-200 hover:text-emerald-900"
-            >To the Data</RouterLink
+            class="text-md peer mx-10 rounded-md bg-zinc-800 px-4 py-2 text-center font-medium text-sky-100 transition-all duration-200 hover:scale-105 hover:bg-sky-400 hover:text-green-50"
+            >Zu den Daten!</RouterLink
           >
         </div>
+        <div
+          class="relative flex max-w-6xl justify-center self-center overflow-hidden py-10"
+        ></div>
       </div>
+
       <BlogPreview />
     </main>
   </div>
 </template>
-<style scoped>
-h2 {
-  @apply ml-1 text-xl font-bold;
-}
-</style>

@@ -10,6 +10,7 @@ const sorting = ref("Alphabetisch Aufsteigend");
 const isBusiness = ref(false);
 
 const rtlLanguages = [
+  "de",
   "ar",
   "dv",
   "fa",
@@ -155,38 +156,45 @@ function deUmlaut(value) {
     <!--Wrapper um die Tabelle-->
     <main class="flex flex-col justify-between md:max-w-full md:flex-row">
       <menu
-        class="bg-blur relative z-0 flex min-w-[20rem] flex-col overflow-hidden bg-green-200/30 p-4 lg:max-w-[20rem]"
+        class="relative z-0 m-2 flex min-w-[20rem] flex-col overflow-hidden rounded-2xl bg-sky-800/20 p-4 shadow-sm shadow-zinc-300 backdrop-blur-2xl before:absolute before:top-16 before:-z-10 before:flex before:h-60 before:w-56 before:animate-spin-slow before:self-center before:rounded-full before:bg-green-500 before:bg-gradient-to-br before:from-sky-400 before:opacity-30 before:blur-lg md:before:top-[40vh] lg:max-w-[20rem]"
         :class="{ 'md:order-last': isrtl }"
       >
-        <h3 class="text-center text-2xl font-bold">Daten Auswählen</h3>
-        <div
-          class="flex h-12 items-center justify-center space-x-2 bg-slate-300 text-lg"
+        <h3
+          class="my-4 text-center font-serif text-2xl font-bold max-sm:my-2 max-sm:text-lg"
         >
+          Daten Auswählen
+        </h3>
+        <div class="flex h-12 items-center justify-center space-x-2 text-lg">
           <label class="text-center font-bold">Länder</label>
+
           <input
             v-model="isBusiness"
             type="checkbox"
-            class="toggle toggle-md bg-green-700"
+            class="toggle toggle-md bg-green-600"
           />
           <label class="text-center font-bold">Unternehmen</label>
         </div>
-
-        <div
-          class="flex w-full justify-around rounded-md border border-sky-100 bg-zinc-700 p-4"
+        <h3
+          class="my-4 text-center font-serif text-2xl font-bold max-sm:my-2 max-sm:text-lg"
         >
-          <input
-            type="search"
-            v-model="search"
-            placeholder="Suchen"
-            class="p-2"
-          />
-        </div>
-        <div class="flex flex-col">
-          <h3 class="text-center text-2xl font-bold">Sortieren</h3>
+          Suchen
+        </h3>
+        <input
+          type="search"
+          v-model="search"
+          placeholder="Suchen"
+          class="m-2 h-10 rounded-lg p-2 text-sm outline-none ring-2 ring-green-600 transition-all duration-500 focus:bg-green-100"
+        />
 
+        <div class="flex flex-col">
+          <h3
+            class="my-4 text-center font-serif text-2xl font-bold max-sm:my-2 max-sm:text-lg"
+          >
+            Sortieren
+          </h3>
           <select
             v-model="sorting"
-            class="m-2outline-none select text-sm focus:border focus:border-green-700"
+            class="select m-2 text-sm outline-none transition-all duration-500 focus:border focus:border-green-700 focus:bg-green-100"
           >
             <option>Alphabetisch Aufsteigend</option>
             <option>Alphabetisch Absteigend</option>
@@ -218,37 +226,31 @@ function deUmlaut(value) {
       >
         <table
           v-if="!isBusiness"
-          class="text-md max-sm:mx-0 max-sm:text-sm md:mx-10 md:h-0 md:border-separate md:border-spacing-0.5 lg:border-spacing-y-1"
+          class="text-md p-1 shadow-zinc-800 max-sm:mx-0 max-sm:text-sm md:mx-10 md:h-0 md:border-separate md:border-spacing-0.5 lg:border-spacing-x-1 lg:border-spacing-y-1"
         >
           <!--Länder Tabelle-->
           <thead class="max-h-10 bg-emerald-900 text-sky-100">
             <tr class="[&>*]:px-2 md:[&>*]:rounded-md">
-              <th class="border-gray-700">Land</th>
-              <th class="border border-t-0 border-gray-700">
+              <th class="">Land</th>
+              <th class="">
                 Gesamt-Emmision <br />
                 in kt
               </th>
-              <th class="border border-t-0 border-gray-700">
-                Pro Kopf <br />in t
-              </th>
-              <th class="border border-t-0 border-r-0 border-gray-700">
+              <th class="">Pro Kopf <br />in t</th>
+              <th class="">
                 Globaler Anteil <br />
                 in %
               </th>
-              <th
-                class="border border-t-0 border-r-0 border-gray-700 max-lg:hidden"
-              >
-                Bevölkerung
-              </th>
+              <th class="max-lg:hidden">Bevölkerung</th>
             </tr>
           </thead>
           <tbody
             v-for="land in searchedData"
             :key="land.land"
-            class="odd:bg-sky-200/80 even:bg-green-200/80"
+            class="odd:bg-sky-200 even:bg-green-200"
           >
             <tr
-              class="border-gray-700 text-center font-medium text-emerald-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
+              class="border-gray-700 text-center font-medium text-zinc-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
             >
               <td>{{ land.land }}</td>
               <td>
@@ -273,23 +275,21 @@ function deUmlaut(value) {
           <!--Länder Tabelle-->
           <thead class="max-h-10 bg-emerald-900 text-sky-100">
             <tr class="[&>*]:px-2 md:[&>*]:rounded-md">
-              <th class="border-gray-700">Unternehmen</th>
-              <th class="border border-t-0 border-gray-700">
+              <th class="">Unternehmen</th>
+              <th class="">
                 Gesamt-Emmision <br />
                 in t
               </th>
-              <th class="border border-t-0 border-r-0 border-gray-700">
-                Sektor
-              </th>
+              <th class="">Sektor</th>
             </tr>
           </thead>
           <tbody
             v-for="unternehmen in searchedData"
             :key="unternehmen.unternehmen"
-            class="odd:bg-sky-200/80 even:bg-green-200/80"
+            class="odd:bg-sky-200 even:bg-green-200"
           >
             <tr
-              class="border-gray-700 text-center font-medium text-emerald-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
+              class="border-gray-700 text-center font-medium text-zinc-900 sm:[&>*]:px-2 md:[&>*]:rounded-sm"
             >
               <td>{{ unternehmen.unternehmen }}</td>
               <td>

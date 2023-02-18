@@ -7,8 +7,6 @@ import img3Url from "../assets/images/pollution.jpg";
 import { ref } from "vue";
 
 const blogdata = ref(blogs.data);
-
-console.log(blogdata);
 </script>
 
 <template>

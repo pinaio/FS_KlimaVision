@@ -1,4 +1,5 @@
 <script setup>
+import BlogPreview from "@/components/BlogPreview.vue";
 import { useRoute, useRouter } from "vue-router";
 import blogs from "@/data/blogs.json";
 import { ref, computed } from "vue";
@@ -35,10 +36,14 @@ const picture = computed(() => {
 
 <template>
   <div class="float mx-auto max-w-6xl justify-center">
-    <img v-if="picture" :src="picture" />
-    <h1 class="py-10 px-2 text-2xl font-bold text-green-600">{{ titel }}</h1>
-    <p class="p-4 text-lg leading-8">{{ text }}</p>
+    <img v-if="picture" :src="picture" class="p-10" />
+    <h1 class="py-10 px-2 font-serif text-6xl font-bold text-green-600">
+      {{ titel }}
+    </h1>
+    <p class="mb-10 p-6 text-lg leading-8 text-zinc-900">{{ text }}</p>
   </div>
+
+  <BlogPreview />
 </template>
 
 <style></style>
