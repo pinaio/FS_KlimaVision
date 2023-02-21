@@ -1,22 +1,27 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 const isMenuOpen = ref(false);
+const router = useRouter();
 
 function openCloseMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
+
+const goHome = () => {
+  router.push("/");
+  console.log("klickt");
+};
 </script>
 
 <template>
   <nav class="relative mx-auto p-2 font-semibold md:shadow-sm">
     <div class="item-center flex justify-between">
-      <div class="">
-        <object
-          data="src\assets\Logo.svg"
-          class="ml-4 h-20 self-center lg:ml-10"
-        ></object>
+      <div @click="goHome" class="">
+        <img src="@\assets\Logo.svg" class="ml-4 h-10 self-center lg:ml-10" />
       </div>
+
       <!--Menu - items-->
       <div
         class="hidden items-center justify-center space-x-8 text-zinc-800 md:flex"
