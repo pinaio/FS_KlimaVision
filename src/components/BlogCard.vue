@@ -6,7 +6,7 @@
       :src="blogPic"
       height="400"
       width="400"
-      class="transition-all duration-300 group-hover:scale-105"
+      class="mx-auto transition-all duration-300 group-hover:scale-105"
     />
     <div class="p-4">
       <h3 class="h-16 py-4 text-center text-xl font-semibold text-green-600">

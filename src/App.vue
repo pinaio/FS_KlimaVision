@@ -2,6 +2,7 @@
 import { RouterLink, RouterView, useRoute } from "vue-router";
 import MainNav from "./components/MainNav.vue";
 import Footer from "./components/Footer.vue";
+
 const route = useRoute();
 </script>
 
