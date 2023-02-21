@@ -1,9 +1,7 @@
 <script setup>
-import blogs from "../data/blogs.json";
+import blogs from "@/data/blogs.json";
 import BlogCard from "./BlogCard.vue";
-import img1Url from "../assets/images/earth.jpg";
-import img2Url from "../assets/images/happy_earth.jpg";
-import img3Url from "../assets/images/pollution.jpg";
+
 import { ref } from "vue";
 
 const blogdata = ref(blogs.data);
