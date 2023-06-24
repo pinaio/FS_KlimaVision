@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref, vModelCheckbox } from "vue";
+import { computed, ref } from "vue";
 import climadata from "../data/db.json";
 
 const laender = ref(climadata.country);
@@ -10,6 +10,7 @@ const sorting = ref("Alphabetisch Aufsteigend");
 const isBusiness = ref(false);
 
 const rtlLanguages = [
+  "de",
   "ar",
   "dv",
   "fa",
@@ -221,7 +222,7 @@ function deUmlaut(value) {
         </div>
       </menu>
       <div
-        class="z-10 flex grow justify-center backdrop-blur-lg md:max-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
+        class="z-10 flex grow justify-center backdrop-blur-lg md:max-h-[calc(100vh-12rem)] md:min-h-[calc(100vh-14rem)] md:overflow-y-scroll"
       >
         <table
           v-if="!isBusiness"

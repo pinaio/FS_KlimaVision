@@ -16,7 +16,7 @@ const goHome = () => {
 </script>
 
 <template>
-  <nav class="relative mx-auto p-2 font-semibold md:shadow-sm">
+  <nav class="min-h-16 relative mx-auto p-2 font-semibold md:shadow-sm">
     <div class="item-center flex justify-between">
       <div @click="goHome" class="">
         <img src="@\assets\Logo.svg" class="ml-4 h-10 self-center lg:ml-10" />

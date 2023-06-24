@@ -3,6 +3,8 @@ import HomeView from "../views/HomeView.vue";
 import DataView from "../views/DataView.vue";
 import AboutView from "../views/AboutView.vue";
 import BlogView from "../views/BlogView.vue";
+import ImpressumView from "../views/ImpressumView.vue";
+import DSView from "../views/DSView.vue";
 import Blogpage from "../views/paramPages/Blogpage.vue";
 
 const router = createRouter({
@@ -27,6 +29,16 @@ const router = createRouter({
       path: "/blog",
       name: "blog",
       component: BlogView,
+    },
+    {
+      path: "/impressum",
+      name: "impressum",
+      component: ImpressumView,
+    },
+    {
+      path: "/datenschutz",
+      name: "datenschutz",
+      component: DSView,
     },
     {
       path: "/blog/:id",
