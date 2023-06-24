@@ -10,7 +10,6 @@ const sorting = ref("Alphabetisch Aufsteigend");
 const isBusiness = ref(false);
 
 const rtlLanguages = [
-  "de",
   "ar",
   "dv",
   "fa",
